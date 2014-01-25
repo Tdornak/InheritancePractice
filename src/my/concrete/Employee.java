@@ -8,20 +8,21 @@ package my.concrete;
  */
 public class Employee {
     
-    private int idNumber;
+    private String idNumber;
     private String name;
     /**Every employee has to have a boss, and once your at the top
      * your not an employee but the CEO.
      */
-    private int supervisorIdNumber;
+    private String supervisorIdNumber;
 
+    
 //    public Employee(int idNumber, String name, int supervisorIdNumber) {
 //        this.idNumber = idNumber;
 //        this.name = name;
 //        this.supervisorIdNumber = supervisorIdNumber;
 //    }
     
-    public int getIdNumber() {
+    public String getIdNumber() {
         return idNumber;
     }
 
@@ -29,8 +30,20 @@ public class Employee {
         return name;
     }
 
-    public int getSupervisorIdNumber() {
+    public String getSupervisorIdNumber() {
         return supervisorIdNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSupervisorIdNumber(String supervisorIdNumber) {
+        this.supervisorIdNumber = supervisorIdNumber;
     }
     
     

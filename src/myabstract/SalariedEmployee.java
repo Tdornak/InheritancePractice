@@ -10,8 +10,8 @@ public class SalariedEmployee extends Employee {
 
     private double annualSalary;
     
-    //@Override
-    public double getPayment() {
+    @Override
+    public double getPayment(double annualSalary) {
         return annualSalary / 12;
     }
 

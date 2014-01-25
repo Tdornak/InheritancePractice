@@ -11,7 +11,7 @@ public class SalariedPlusCommissionEmployee extends SalariedEmployee {
     private double commission;
 
     //Still working on this
-    //@Override
+    @Override
     public double getPayment(double annualSalary) {
         return annualSalary /12  + commission;
     }

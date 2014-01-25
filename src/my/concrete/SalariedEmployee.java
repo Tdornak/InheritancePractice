@@ -22,5 +22,10 @@ public class SalariedEmployee extends Employee {
     public double monthlySalary() {
         return annualSalary / 12;
     }
+
+    public void setAnnualSalary(double annualSalary) {
+        this.annualSalary = annualSalary;
+    }
+    
     
 }

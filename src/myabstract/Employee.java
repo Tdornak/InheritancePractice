@@ -13,7 +13,7 @@ public abstract class Employee {
     private String supervisorIdNumber;
     
     //this one was not working out with the commission
-    //public abstract double getPayment();
+    public abstract double getPayment(double pay);
 
     public String getIdNumber() {
         return idNumber;
