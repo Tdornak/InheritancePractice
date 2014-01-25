@@ -8,13 +8,14 @@ package myabstract;
  */
 public abstract class Employee {
     
-    private int idNumber;
+    private String idNumber;
     private String name;
-    private int supervisorIdNumber;
+    private String supervisorIdNumber;
     
-    public abstract double getPayment();
+    //this one was not working out with the commission
+    //public abstract double getPayment();
 
-    public int getIdNumber() {
+    public String getIdNumber() {
         return idNumber;
     }
 
@@ -22,8 +23,20 @@ public abstract class Employee {
         return name;
     }
 
-    public int getSupervisorIdNumber() {
+    public String getSupervisorIdNumber() {
         return supervisorIdNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSupervisorIdNumber(String supervisorIdNumber) {
+        this.supervisorIdNumber = supervisorIdNumber;
     }
     
     

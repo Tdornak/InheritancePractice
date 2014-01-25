@@ -10,7 +10,7 @@ public class SalariedEmployee extends Employee {
 
     private double annualSalary;
     
-    @Override
+    //@Override
     public double getPayment() {
         return annualSalary / 12;
     }
@@ -18,11 +18,10 @@ public class SalariedEmployee extends Employee {
     public void setAnnualSalary(double annualSalary) {
         this.annualSalary = annualSalary;
     }
-    
-    
-    
+     
     public double getAnnualSarary() {
         return annualSalary;
     }
+    
     
 }
