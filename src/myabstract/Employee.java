@@ -12,7 +12,6 @@ public abstract class Employee {
     private String name;
     private String supervisorIdNumber;
     
-    //this one was not working out with the commission
     public abstract double getPayment(double pay);
 
     public String getIdNumber() {

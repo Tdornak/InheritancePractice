@@ -8,29 +8,26 @@ package myinterface;
  */
 public class SalariedEmployee implements Employee{
 
-    //Employee as an interface means i have to put this here and in hourlyemployee
     
-    private int idNumber;
+    
+    private String idNumber;
     private String name;
-    private int supervisorIdNumber;
+    private String supervisorIdNumber;
     private double annualSalary;
     
     @Override
-    public int getIdNumber() {
+    public String getIdNumber() {
         return idNumber;
-
     }
 
     @Override
     public String getName() {
         return name;
-   
     }
 
     @Override
-    public int getSupervisorIdNumber() {
+    public String getSupervisorIdNumber() {
         return supervisorIdNumber;
-   
     }
     
     public double getAnnualSarary() {
@@ -38,8 +35,24 @@ public class SalariedEmployee implements Employee{
     }
 
     @Override
-    public double payment() {
+    public double payment(double annualSalary) {
         return annualSalary / 12;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSupervisorIdNumber(String supervisorIdNumber) {
+        this.supervisorIdNumber = supervisorIdNumber;
+    }
+
+    public void setAnnualSalary(double annualSalary) {
+        this.annualSalary = annualSalary;
     }
     
     

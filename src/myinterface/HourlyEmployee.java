@@ -8,14 +8,13 @@ package myinterface;
  */
 public class HourlyEmployee implements Employee {
 
-    private int idNumber;
+    private String idNumber;
     private String name;
-    private int supervisorIdNumber;
-    private double hours;
+    private String supervisorIdNumber;
     private double payRate;
     
     @Override
-    public int getIdNumber() {
+    public String getIdNumber() {
         return idNumber;
     }
 
@@ -25,15 +24,31 @@ public class HourlyEmployee implements Employee {
     }
 
     @Override
-    public int getSupervisorIdNumber() {
+    public String getSupervisorIdNumber() {
         return supervisorIdNumber;
     }
 
     @Override
-    public double payment() {
+    public double payment(double hours) {
         return hours * payRate;
     }
-    
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSupervisorIdNumber(String supervisorIdNumber) {
+        this.supervisorIdNumber = supervisorIdNumber;
+    }
+
+    public void setPayRate(double payRate) {
+        this.payRate = payRate;
+    }
+
     
     
 }

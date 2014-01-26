@@ -8,19 +8,11 @@ package my.concrete;
  */
 public class HourlyEmployee extends Employee {
     
-    private double hours;
+    
     private double payRate;
     
-    public double getWage() {
+    public double getWage(double hours) {
         return hours * payRate;
-    }
-
-    public double getHours() {
-        return hours;
-    }
-
-    public void setHours(double hours) {
-        this.hours = hours;
     }
 
     public double getPayRate() {

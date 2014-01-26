@@ -17,7 +17,6 @@ public class Startup {
         HourlyEmployee e1 = new HourlyEmployee();
         e1.setName("Rob");
         e1.setPayRate(8.5);
-        //e1.setHours(20);  //this is gone now
         System.out.println(e1.getName() + "  " + fmt.format(e1.getPayment(20)));
         
         

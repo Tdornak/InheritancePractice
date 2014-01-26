@@ -8,10 +8,10 @@ package myinterface;
  */
 public interface Employee {
     
-    public abstract int getIdNumber();
+    public abstract String getIdNumber();
     public abstract String getName();
-    public abstract int getSupervisorIdNumber();
+    public abstract String getSupervisorIdNumber();
     
-    public abstract double payment();
-    
+    public abstract double payment(double pay);
+   
 }
