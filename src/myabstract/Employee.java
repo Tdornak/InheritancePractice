@@ -9,35 +9,33 @@ package myabstract;
 public abstract class Employee {
     
     private String idNumber;
-    private String name;
-    private String supervisorIdNumber;
+    private String firstName;
+    private String lastName;
     
-    public abstract double getPayment(double pay);
+    public abstract double getAnnualPay();
 
     public String getIdNumber() {
         return idNumber;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSupervisorIdNumber() {
-        return supervisorIdNumber;
     }
 
     public void setIdNumber(String idNumber) {
         this.idNumber = idNumber;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setSupervisorIdNumber(String supervisorIdNumber) {
-        this.supervisorIdNumber = supervisorIdNumber;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    
-    
-    
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+ 
 }

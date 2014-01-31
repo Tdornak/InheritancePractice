@@ -9,44 +9,56 @@ package myinterface;
 public class HourlyEmployee implements Employee {
 
     private String idNumber;
-    private String name;
-    private String supervisorIdNumber;
+    private String firstName;
+    private String lastName;
     private double payRate;
-    
+    private double hours;
+   
+    public void setPayRate(double payRate) {
+        this.payRate = payRate;
+    }
+
     @Override
     public String getIdNumber() {
         return idNumber;
     }
 
     @Override
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
     @Override
-    public String getSupervisorIdNumber() {
-        return supervisorIdNumber;
+    public String getLastName() {
+        return lastName;
     }
 
     @Override
-    public double payment(double hours) {
-        return hours * payRate;
-    }
-
     public void setIdNumber(String idNumber) {
         this.idNumber = idNumber;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setSupervisorIdNumber(String supervisorIdNumber) {
-        this.supervisorIdNumber = supervisorIdNumber;
+    @Override
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public void setPayRate(double payRate) {
-        this.payRate = payRate;
+    public double getHours() {
+        return hours;
+    }
+
+    public void setHours(double hours) {
+        this.hours = hours;
+    }
+
+    @Override
+    public double getAnnualPay() {
+        return payRate * hours * 52;
     }
 
     

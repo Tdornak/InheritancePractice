@@ -7,12 +7,12 @@ package myinterface;
  * @author Tim
  */
 
-public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Employee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
     private double commission;
         
-    public double getPayment(double annualSalary) {
-        return annualSalary / 12 + commission;
+    public double getAnnualPay() {
+        return this.getAnnualSarary() + commission;
     }
     
     public double getCommission() {

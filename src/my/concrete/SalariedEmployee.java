@@ -10,17 +10,13 @@ public class SalariedEmployee extends Employee {
  
     private double annualSalary;
 
-//    public SalariedEmployee(int idNumber, String name, int supervisorIdNumber, double annualSalary) {
-//        super(idNumber, name, supervisorIdNumber);
-//        this.annualSalary = annualSalary;
-//    }
-    
-    public double getAnnualSarary() {
+    @Override
+    public double getAnnualPay() {
         return annualSalary;
     }
     
-    public double monthlySalary() {
-        return annualSalary / 12;
+    public double getAnnualSarary() {
+        return annualSalary;
     }
 
     public void setAnnualSalary(double annualSalary) {

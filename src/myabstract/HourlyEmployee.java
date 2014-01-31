@@ -10,10 +10,11 @@ public class HourlyEmployee extends Employee {
 
     
     private double payRate;
+    private double hours;
     
-    @Override //the hours can changes every week depending on the job, the payRate probally wont.
-    public double getPayment(double hours) {
-        return hours * payRate;
+    @Override 
+    public double getAnnualPay() {
+        return hours * payRate * 52;
     }
 
     public double getPayRate() {
@@ -23,6 +24,15 @@ public class HourlyEmployee extends Employee {
     public void setPayRate(double payRate) {
         this.payRate = payRate;
     }
+
+    public double getHours() {
+        return hours;
+    }
+
+    public void setHours(double hours) {
+        this.hours = hours;
+    }
+    
     
     
 }
